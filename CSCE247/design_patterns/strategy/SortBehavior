@@ -1,0 +1,4 @@
+//Written by Blaise Moses
+public interface SortBehavior {
+    public Arraylist<String> sort(ArrayList<String> data);
+}

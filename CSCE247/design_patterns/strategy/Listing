@@ -1,0 +1,62 @@
+//Written by Blaise Moses
+
+public class Listing{
+    private String title;
+    private ArrayList<String> items;
+    private SortBehavior sortBehavior;
+}
+public Listing(String title){
+    this.title = title;
+}
+public void add(String item){
+    this.items.add(item);
+}
+public void remove(String item){
+   for(int i=0; i < items.size ; i++){
+        if (items[i] == item)
+            this.items.remove(i);
+   }
+}
+public String getTitle(){
+ return this.title;
+}
+public void setSortBehavior(SortBehavior sortBehavior){
+    this.sortBehavior = sortBehavior;
+}
+public ArrayList<String> getSortedList(){
+    this.items.sortBehavior.sort();
+}
+public ArrayList<String> getUnsortedList(){
+    return this.items;
+}
+public interface SortBehavior {
+    public Arraylist<String> sort(ArrayList<String> data);
+}
+public class BubbleSort implements SortBehavior{
+    String ret="";
+    public  ArrayList<String> sort(ArrayList<String data){
+        for(int i=0; i < data.length ; i++){
+            if(data[i].charAt(0).toInt() > data[i+1].charAt(0).toInt()){
+                ret = data[i];
+                data[i] = data[i+1];
+                data[i+1]=ret;
+            }
+        }
+        return data; 
+    }
+}
+public class InsertionSort implements SortBehavior{
+    public ArrayList<String> sort(ArrayList<String> data){
+        for(int i = 0; i < data.size(); i++){
+            String marker = data[i];
+            int j = i-1;
+            while( j >= 0 && data[j] > marker){
+                data[j+1]=data[j];
+                j--;
+            }
+            data[j+1] = marker];
+            }
+        }
+    }
+}
+

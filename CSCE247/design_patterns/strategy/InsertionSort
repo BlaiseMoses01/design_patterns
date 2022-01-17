@@ -1,0 +1,16 @@
+//Written by Blaise Moses
+
+public class InsertionSort implements SortBehavior{
+    public ArrayList<String> sort(ArrayList<String> data){
+        for(int i = 0; i < data.size(); i++){
+            String marker = data[i];
+            int j = i-1;
+            while( j >= 0 && data[j] > marker){
+                data[j+1]=data[j];
+                j--;
+            }
+            data[j+1] = marker];
+            }
+        }
+    }
+}
