@@ -69,5 +69,5 @@ public class StudentGovPoll implements Subject{
     public String getSchool(){
         return this.school;
     }
-
+ //referenced https://www.w3schools.com/java/java_hashmap.asp for help with HashMap syntax
 }
