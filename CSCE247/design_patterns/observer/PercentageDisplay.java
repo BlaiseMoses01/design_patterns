@@ -41,4 +41,5 @@ public class PercentageDisplay implements Observer{
             System.out.println(k + ": " + df.format((ret/numVotes)*100)+"%");
         }
     }
+    //Referenced https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html for help with the decimal formatting.
 } 
