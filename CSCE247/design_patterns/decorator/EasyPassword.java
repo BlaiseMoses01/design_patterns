@@ -10,7 +10,7 @@ public class EasyPassword extends Password
     private int randomNum=r.nextInt(upperbound);
     private String password;
     /**
-     * creates an instance variable for the private password string and sets it to a passed in String, allowing for manipulation and 
+     * creates an instance variable for the private password string and sets it to a passed in String, then appends a random number between 0-100, allowing for manipulation and 
      * modification of said instance variable.
      */
     public EasyPassword(String phrase)
