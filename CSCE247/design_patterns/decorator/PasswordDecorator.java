@@ -5,6 +5,6 @@
  */
 public abstract class PasswordDecorator extends Password
 {
-    Password passwordBeginning;
+    protected Password passwordBeginning;
     public abstract String getPassword();
 }
